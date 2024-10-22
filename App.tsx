@@ -1,7 +1,7 @@
 
 // useState: creates state, makes getter and setter
 import React, {useState} from 'react';
-import {StyleSheet, Button, Text, TextInput, View} from 'react-native';
+import {StyleSheet, Button, Text, TextInput, View, SafeAreaView} from 'react-native';
 
 
 function App(): React.JSX.Element {
@@ -54,7 +54,7 @@ function App(): React.JSX.Element {
   }
   
   return (
-    <View
+    <SafeAreaView
       style = {styles.container}>
 
       <View
@@ -64,7 +64,7 @@ function App(): React.JSX.Element {
         <Text style={{fontSize:20, height: "20%"}}>{value}</Text>
       </View>
 
-      <View
+      <SafeAreaView
         style = {styles.row}>
         <Text style={styles.button}>
           <Button title="AC" color="#d4d4d2" onPress={()=>processButton("AC")}/>
@@ -78,9 +78,9 @@ function App(): React.JSX.Element {
         <Text style={styles.button}>
           <Button title="C" color= "#ff9500" onPress={()=>processButton("/")}/>
         </Text>
-      </View>
+      </SafeAreaView>
 
-      <View
+      <SafeAreaView
       style = {styles.row}>
         <Text style={styles.button}>
           <Button title="7" color="#505050" onPress={()=>processButton("7")}/>
@@ -94,9 +94,9 @@ function App(): React.JSX.Element {
         <Text style={styles.button}>
           <Button title="/" color= "#ff9500" onPress={()=>processButton("*")}/>
         </Text>
-      </View>
+      </SafeAreaView>
 
-      <View
+      <SafeAreaView
       style = {styles.row}>
         <Text style={styles.button}>
           <Button title="4" color="#505050" onPress={()=>processButton("4")}/>
@@ -110,9 +110,9 @@ function App(): React.JSX.Element {
         <Text style={styles.button}>
           <Button title="x" color= "#ff9500" onPress={()=>processButton("x")}/>
         </Text>
-      </View>
+      </SafeAreaView>
 
-      <View
+      <SafeAreaView
       style = {styles.row}>
         <Text style={styles.button}>
           <Button title="1" color="#505050" onPress={()=>processButton("1")}/>
@@ -126,9 +126,9 @@ function App(): React.JSX.Element {
         <Text style={styles.button}>
           <Button title="-" color= "#ff9500" onPress={()=>processButton("-")}/>
         </Text>
-      </View>
+      </SafeAreaView>
 
-      <View
+      <SafeAreaView
       style = {styles.row}>
         <Text style={styles.button}>
           <Button title="0" color="#505050" onPress={()=>processButton("0")}/>
@@ -142,9 +142,9 @@ function App(): React.JSX.Element {
         <Text style={styles.button}>
           <Button title="+" color= "#ff9500" onPress={()=>processButton("+")}/>
         </Text>
-      </View>
+      </SafeAreaView>
 
-    </View>
+    </SafeAreaView>
   );
 }
 
